@@ -1,7 +1,10 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
+import './all.sass'
+import logo from '../img/logo.png'
+import facebook from '../img/social/facebook.svg'
+import instagram from '../img/social/instagram.svg'
+import twitter from '../img/social/twitter.svg'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -40,57 +43,43 @@ const Navbar = class extends React.Component {
         aria-label="main-navigation"
       >
         <div className="container">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
-            </Link>
-            {/* Hamburger menu */}
-            <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
-              data-target="navMenu"
-              onClick={() => this.toggleHamburger()}
-            >
-              <span />
-              <span />
-              <span />
-            </div>
-          </div>
+          <div className="navbar-brand"
+               style={{position: 'relative', left: '50%', top: '50%', transform: 'translate(-50%, -50%)'}}
+          >
+
+           
           <div
             id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
+            className={`navbar-menu ${this.state.navBarActiveClass} `}
+            
           >
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
-                About
+            <Link className="navbar-item" style={{margin:'10px'}} to="/">
+                Matches
+              </Link>            
+              <Link className="navbar-item" style={{margin:'10px'}} to="/">
+                Évènements
               </Link>
-              <Link className="navbar-item" to="/products">
-                Products
+            <Link className="navbar-item" style={{margin:'10px'}} to="/products">
+                Boutique
               </Link>
-              <Link className="navbar-item" to="/blog">
+            <Link to="/" className="" title="Logo">
+              <img src={logo} alt="FCS" style={{ width: '125px'}} />
+            </Link>
+            <Link className="navbar-item" style={{margin:'10px'}} to="/about">
+                Partenaires
+            </Link>         
+            <Link className="navbar-item" style={{margin:'10px'}} to="/contact">
+                Inscriptions
+            </Link>
+            <Link className="navbar-item" style={{margin:'10px'}} to="/blog">
                 Blog
-              </Link>
-              <Link className="navbar-item" to="/contact">
-                Contact
-              </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
-              </Link>
-            </div>
-            <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
-            </div>
-          </div>
+            </Link>
+
+            
+          </div> 
         </div>
-      </nav>
+      </div>
+    </nav>
     )
   }
 }
