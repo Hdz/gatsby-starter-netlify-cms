@@ -1,39 +1,41 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
-image: /img/flavor_wheel.jpg
-heading: FCS
-subheading: FCS
+title: Futsal Club Sucéen
+image: /img/wallpaper7.jpg
+heading: Site officiel du Futsal Club Sucéen.
+subheading: Site officiel du Futsal Club Sucéen.
 mainpitch:
   title: FCS
-  description: FCS
-description: Kaldi is the ultimate spot for coffee lovers who want to learn
-  about their java’s origin and support the farmers that grew it. We take coffee
-  production, roasting and brewing seriously and we’re glad to pass that
-  knowledge to anyone.
+  description: >
+      La section futsal du FCS (dont le nom officiel en catalan est Futsal Club Sucéen et le diminutif FCS) est un club de futsal français fondé en 2008, basé à Sucé et qui évolue dans le championnat de France de Futsal (EN District quoi).
+description: >-
+  Kaldi is the ultimate spot for coffee lovers who want to learn about their
+  java’s origin and support the farmers that grew it. We take coffee production,
+  roasting and brewing seriously and we’re glad to pass that knowledge to
+  anyone.
 intro:
   blurbs:
-    - image: /img/coffee.png
+    - image: /img/futsal1.jpg
       text: >
         We sell green and roasted coffee beans that are sourced directly from
         independent farmers and farm cooperatives. We’re proud to offer a
         variety of coffee beans grown with great care for the environment and
         local communities. Check our post or contact us directly for current
         availability.
-    - image: /img/coffee-gear.png
+    - image: /img/futsal2.jpg
       text: >
         We offer a small, but carefully curated selection of brewing gear and
         tools for every taste and experience level. No matter if you roast your
         own beans or just bought your first french press, you’ll find a gadget
         to fall in love with in our shop.
-    - image: /img/tutorials.png
+    - image: /img/futsal3.jpg
       text: >
         Love a great cup of coffee, but never knew how to make one? Bought a
         fancy new Chemex but have no clue how to use it? Don't worry, we’re here
         to help. You can schedule a custom 1-on-1 consultation with our baristas
         to learn anything you want to know about coffee roasting and brewing.
         Email us or call the store for details.
-    - image: /img/meeting-space.png
+    - image: /img/futsal4.jpg
       text: >
         We believe that good coffee has the power to bring people together.
         That’s why we decided to turn a corner of our shop into a cozy meeting
