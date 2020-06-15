@@ -2,7 +2,7 @@
 templateKey: 'product-page'
 path: /products
 title: 
-image: /img/jumbotron.jpg
+image: /img/wallpaper4.jpg
 heading: Great coffee with a conscience
 description: >-
   Siège Social
