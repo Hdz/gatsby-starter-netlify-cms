@@ -86,24 +86,24 @@ export const IndexPageTemplate = ({
                     <p>{description}</p>
                   </div>
                 </div>
-                <Features gridItems={intro.blurbs} />
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/products">
-                      See all products
+                      Voir tous les produits
                     </Link>
                   </div>
                 </div>
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
+                    Les dernières informations du club.
                   </h3>
                   <BlogRoll />
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/blog">
-                      Read more
+                      Lire
                     </Link>
                   </div>
+                  <Features gridItems={intro.blurbs} />
                 </div>
               </div>
             </div>
@@ -154,6 +154,8 @@ IndexPage.propTypes = {
 
 export default IndexPage
 
+
+
 export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
@@ -168,6 +170,7 @@ export const pageQuery = graphql`
         }
         heading
         subheading
+        
         mainpitch {
           title
           description
@@ -187,6 +190,7 @@ export const pageQuery = graphql`
           heading
           description
         }
+        
       }
     }
   }
