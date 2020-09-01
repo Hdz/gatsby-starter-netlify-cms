@@ -1,16 +1,17 @@
 @import "~bulma/sass/utilities/initial-variables"
 
-// Config vars
-// Kaldi logo brand color: #FD461E
-$kaldi-red: FFD700
-$kaldi-red-invert: #fff
+
+    
+
 $body-color: #333
 $black: #2b2523
 $gold: #FFD700
-$primary: $gold
+$primary: $black
 $primary-invert: $gold
 .navbar .navbar-menu
   box-shadow:none !important
+      color: $gold
+      color: #FFD700
 
 .content .taglist
   list-style: none
@@ -60,31 +61,39 @@ $primary-invert: $gold
     border-radius: .25rem
     text-decoration: none
     font-weight: 700
-    color: #FFD700
+    color: $black
     text-align: center
-    -webkit-box-shadow: inset 0 0 0 2px #FFD700
-    box-shadow: inset 0 0 0 2px #FFD700
+    -webkit-box-shadow: inset 0 0 0 2px $black
+    box-shadow: inset 0 0 0 2px $black
     -webkit-transition: all .15s ease
     transition: all .15s ease
 
 .margin-top-0
   margin-top: 0 !important
 
-.navbar-item .icon
+.navbar-item .icon 
   color: #FFD700
-// Override for use of svg's from https://simpleicons.org/
+
+
 .icon svg
   width: 1.5rem
   height: 1.5rem
   fill: currentColor
+  color: #FFD700
+
+
 .navbar-brand .navbar-item.logo
   padding: 0 1rem
+  color: #FFD700
+
+
+
 footer.footer
   padding: 3rem 0rem 0rem
   background-color: transparent
-
+      text-decoration: underline
 //Menu overrides
-$menu-item-color: $white-ter
+$menu-item-color: $gold
 $menu-item-hover-color: $gold !important
 $menu-item-hover-background-color: $gold
 $menu-item-active-color: $gold
@@ -96,11 +105,13 @@ $menu-label-color: $gold
 .menu-label
   font-size: 1em !important
   text-align: left
+  
 .menu-list
   list-style: none !important
   text-align: left
 .social
   padding: 2em
+
 .social a
     padding: .5em .5em .3em .5em
     border-radius: 1em
@@ -110,16 +121,23 @@ $menu-label-color: $gold
     height: 1em
     vertical-align: middle
     display: inline
+    transition: all 1s ease-out
+
+.social a:hover,
+.social a:focus 
+  color: #333
+  background-color: #fff
+
 
 // blog roll
 .blog-list-item.is-featured
-  background-color: #d6400033;
+  background-color: #239600
 .blog-list-item header
-  display: flex;
-  margin-bottom: 1em;
+  display: flex
+  margin-bottom: 1em
 .blog-list-item .featured-thumbnail
-  flex-basis: 35%;
-  margin: 0 1.5em 0 0;
+  flex-basis: 35%
+  margin: 0 1.5em 0 0
 
 
 @import "~bulma"
@@ -128,12 +146,13 @@ $menu-label-color: $gold
 // responsiveness
 +tablet-only
   .blog-list-item .featured-thumbnail
-    flex-basis: 50%;
+    flex-basis: 50%
 
 +mobile
   .blog-list-item header
     display: block
   .blog-list-item .featured-thumbnail
-    text-align: center;
-    max-width: 70%;
-    margin: 0 0 1em;
+    text-align: center
+    max-width: 70%
+    margin: 0 0 1em
+
