@@ -73,12 +73,5 @@ module.exports = {
       },
     }, // must be after other CSS plugins
     'gatsby-plugin-netlify', // make sure to keep it last in the array
-    {
-      resolve: `gatsby-source-googlemaps-static`,
-      options: {
-        key: `AIzaSyDiUd55a-tpfVfCtMVRxdK7OSyQ5lpAW60`,
-        center: `47.330209,-1.5219381`,
-              },
-          },
   ],
 }
