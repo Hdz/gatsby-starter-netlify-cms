@@ -66,6 +66,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-googlemaps-static`,
+      options: {
+        key: `AIzaSyDiUd55a-tpfVfCtMVRxdK7OSyQ5lpAW60`,
+        center: `47.330209,-1.5219381`,
+              },
+          },
+    {
       resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
       options: {
         develop: true, // Activates purging in npm run develop
@@ -73,12 +80,5 @@ module.exports = {
       },
     }, // must be after other CSS plugins
     'gatsby-plugin-netlify', // make sure to keep it last in the array
-    {
-      resolve: `gatsby-source-googlemaps-static`,
-      options: {
-        key: `AIzaSyDiUd55a-tpfVfCtMVRxdK7OSyQ5lpAW60`,
-        center: `47.330209,-1.5219381`,
-              },
-          },
   ],
 }
