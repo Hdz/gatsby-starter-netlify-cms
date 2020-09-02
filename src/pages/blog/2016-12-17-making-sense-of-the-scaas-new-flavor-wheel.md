@@ -4,12 +4,12 @@ title: FCS
 date: 2016-12-17T15:04:10.000Z
 description: C'est juste un article de TEST POUR LE FCS
 featuredpost: false
-featuredimage: /img/flavor_wheel.jpg
+featuredimage: /img/futsal2.jpg
 tags:
   - FCS
   - FCS
 ---
-![fcs](/img/flavor_wheel.jpg)
+![fcs](/img/futsal2.jpg)
 
 C'est juste un article de TEST POUR LE FCS
 

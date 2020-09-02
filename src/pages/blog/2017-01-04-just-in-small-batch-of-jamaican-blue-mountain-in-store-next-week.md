@@ -1,34 +1,33 @@
 ---
 templateKey: 'blog-post'
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
+title: 'Article FCS 3 TEST'
 date: 2017-01-04T15:04:10.000Z
 featuredpost: true
+featuredimage: /img/futsal5.jpg
 description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+  ON TEST Les articles pour le FCS x3 
 tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+  - fcs
+  - futsal
+  - fff
+  - district
 ---
 
-We expect the shipment of a limited quantity of green beans next Monday. We’ll be offering the roasted beans from Tuesday, but quantities are limited, so be quick.
+![fcs](/img/futsal5.jpg)
 
-Blue Mountain Peak is the highest mountain in Jamaica and one of the highest peaks in the Caribbean at 7,402 ft. It is the home of Blue Mountain coffee and their famous tours. It is located on the border of the Portland and Saint Thomas parishes of Jamaica.
+TEST FCS Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim dictum rutrum. Quisque vel neque ullamcorper, vehicula ligula eget, facilisis lacus. Curabitur scelerisque eros ac eleifend pharetra. Nam lobortis aliquam velit, non accumsan ligula dignissim in. Fusce in semper quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean nec laoreet odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat maximus semper. Nulla facilisis ipsum in purus gravida, vel imperdiet leo varius. Pellentesque sed quam nec ex interdum vestibulum. Nunc feugiat sapien dapibus, mattis est laoreet, hendrerit ante. Sed at malesuada tortor. Phasellus eu ligula vel nunc pulvinar blandit.
 
-## A little history
+Donec mollis risus vitae lacus tristique consectetur. Duis fermentum non leo eu venenatis. Cras condimentum dapibus mauris, eget tincidunt urna auctor in. Donec fermentum ipsum vehicula, auctor lectus vitae, efficitur tellus. Nullam vestibulum cursus augue id gravida. Integer id dignissim est, mollis varius neque. Suspendisse potenti. Cras aliquet magna et ante lobortis pretium. Donec facilisis erat sed turpis pulvinar, vitae venenatis elit ornare. Phasellus libero augue, suscipit at lacus id, commodo tristique sapien.
 
-The Blue Mountains are considered by many to be a hiker's and camper's paradise. The traditional Blue Mountain trek is a 7-mile hike to the peak and consists of a 3,000-foot increase in elevation. Jamaicans prefer to reach the peak at sunrise, thus the 3–4 hour hike is usually undertaken in darkness. Since the sky is usually very clear in the mornings, Cuba can be seen in the distance.
+## The little secrets of Chemex brewing
 
->Some of the plants found on the Blue Mountain cannot be found anywhere else in the world and they are often of a dwarfed sort.
+Quisque est erat, tincidunt ac ipsum et, pulvinar gravida dui. Suspendisse non bibendum risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam interdum faucibus leo, in porta nunc venenatis et. Praesent finibus sem ante, in egestas odio fermentum nec. Fusce tincidunt, magna non viverra fringilla, nisl libero ultrices nisl, in tempor lectus sapien et est. Nulla finibus, tellus nec ultrices vehicula, lacus magna tempus augue, eget iaculis est augue mollis lectus. Ut pretium urna massa, eget viverra lacus sodales rhoncus. Maecenas porta tortor vitae tristique porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-This is mainly due to the cold climate which inhibits growth. The small coffee farming communities of Claverty Cottage and Hagley Gap are located near the peak.
+1. Always buy dedicated Chemex filters.
+2. Use a scale, don’t try to eyeball it.
+3. Never skip preheating the glass.
+4. Timing is key, don’t forget the clock.
 
-## What you need to know before trying
+Curabitur aliquet, elit vel lobortis bibendum, tortor sapien euismod odio, et iaculis dolor sem ut nisi. Phasellus rutrum efficitur lorem, ac euismod sem aliquet vel. Ut nulla ante, euismod in lectus ac, aliquet viverra purus. Etiam egestas nunc at posuere luctus. Donec cursus auctor nibh at dictum. Donec posuere eleifend lacus, at scelerisque sapien luctus efficitur. Nam mattis velit sed purus pellentesque facilisis a et arcu. Nunc ut molestie tellus. Suspendisse efficitur eros sit amet eros dictum dictum. Pellentesque euismod vel lacus sed scelerisque. Quisque lacinia at ante eget volutpat.
 
-Jamaican Blue Mountain Coffee or Jamaica Blue Mountain Coffee is a classification of coffee grown in the Blue Mountains of Jamaica. The best lots of Blue Mountain coffee are noted for their mild flavor and lack of bitterness. Over the past few decades, this coffee has developed a reputation that has made it one of the most expensive and sought-after coffees in the world. Over 80% of all Jamaican Blue Mountain Coffee is exported to Japan. In addition to its use for brewed coffee, the beans are the flavor base of Tia Maria coffee liqueur.
-
-Jamaican Blue Mountain Coffee is a globally protected certification mark, meaning only coffee certified by the Coffee Industry Board of Jamaica can be labeled as such. It comes from a recognized growing region in the Blue Mountain region of Jamaica, and its cultivation is monitored by the Coffee Industry Board of Jamaica.
-
-The Blue Mountains are generally located between Kingston to the south and Port Antonio to the north. Rising 7,402 ft, they are some of the highest mountains in the Caribbean. The climate of the region is cool and misty with high rainfall. The soil is rich, with excellent drainage. This combination of climate and soil is considered ideal for coffee.
+Nullam ut nibh ligula. Praesent elit libero, scelerisque et varius at, suscipit a purus. Pellentesque sed risus dui. Suspendisse lacinia augue non lacinia lacinia. Proin dui turpis, dapibus quis sapien sit amet, ultrices tempus justo. Cras scelerisque orci ut rhoncus pellentesque. Morbi luctus nisl magna, eu dignissim risus bibendum vestibulum. Suspendisse ut consectetur odio, eu placerat magna. Aliquam lorem arcu, tincidunt efficitur tincidunt eu, commodo quis metus.
