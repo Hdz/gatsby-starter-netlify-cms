@@ -1,22 +1,16 @@
 ---
-templateKey: 'blog-post'
-title: 'Article FCS 3 TEST'
+templateKey: blog-post
+title: TEST FCS
 date: 2017-01-04T15:04:10.000Z
-description: Pas de description
+description: "TEST FCS "
 featuredpost: true
 featuredimage: /img/futsal5.jpg
-description: >-
-  ON TEST Les articles pour le FCS x3 
 tags:
   - fcs
   - futsal
   - fff
   - district
 ---
-![TEST](/img/futsal6.jpg "TEST")
-
-
-
 ![fcs](/img/futsal5.jpg)
 
 TEST FCS Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim dictum rutrum. Quisque vel neque ullamcorper, vehicula ligula eget, facilisis lacus. Curabitur scelerisque eros ac eleifend pharetra. Nam lobortis aliquam velit, non accumsan ligula dignissim in. Fusce in semper quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean nec laoreet odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat maximus semper. Nulla facilisis ipsum in purus gravida, vel imperdiet leo varius. Pellentesque sed quam nec ex interdum vestibulum. Nunc feugiat sapien dapibus, mattis est laoreet, hendrerit ante. Sed at malesuada tortor. Phasellus eu ligula vel nunc pulvinar blandit.

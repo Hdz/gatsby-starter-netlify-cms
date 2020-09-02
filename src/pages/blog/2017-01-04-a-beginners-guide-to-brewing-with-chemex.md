@@ -1,16 +1,15 @@
 ---
 templateKey: blog-post
-title: TEST FCS
+title: Test d'article pour le FCS
 date: 2017-01-04T15:04:10.000Z
 description: Test d'article pour le FCS
 featuredpost: false
-featuredimage: /img/futsal6.jpg
-description: TEST Article FCS 1
+featuredimage: /img/futsal1.jpg
 tags:
-  - futsal
   - fcs
+  - futsal
 ---
-![fcs](/img/futsal6.jpg)
+![fcs](/img/futsal1.jpg)
 
 TEST FCS Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim dictum rutrum. Quisque vel neque ullamcorper, vehicula ligula eget, facilisis lacus. Curabitur scelerisque eros ac eleifend pharetra. Nam lobortis aliquam velit, non accumsan ligula dignissim in. Fusce in semper quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean nec laoreet odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consequat maximus semper. Nulla facilisis ipsum in purus gravida, vel imperdiet leo varius. Pellentesque sed quam nec ex interdum vestibulum. Nunc feugiat sapien dapibus, mattis est laoreet, hendrerit ante. Sed at malesuada tortor. Phasellus eu ligula vel nunc pulvinar blandit.
 
