@@ -5,7 +5,6 @@ date: 2017-01-04T15:04:10.000Z
 description: Test d'article pour le FCS
 featuredpost: false
 featuredimage: /img/futsal6.jpg
-description: TEST Article FCS 1
 tags:
   - futsal
   - fcs
