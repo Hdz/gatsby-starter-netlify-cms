@@ -1,6 +1,6 @@
 ---
-templateKey: 'blog-post'
-title: 'Article FCS 3 TEST'
+templateKey: blog-post
+title: TEST FCS
 date: 2017-01-04T15:04:10.000Z
 description: C'est juste un article de TEST POUR LE FCS
 featuredpost: true
