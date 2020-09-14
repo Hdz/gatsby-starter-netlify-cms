@@ -16,7 +16,8 @@ const Navbar = class extends React.Component {
     }
   }
 
-  toggleHamburger = () => {
+  /* Mis en commentaire parce qu'on ne veut pas garder l'état pour les dropdown
+    toggleHamburger = () => {
     // toggle the active boolean in the state
     this.setState(
       {
@@ -35,7 +36,7 @@ const Navbar = class extends React.Component {
       }
     )
   }
-
+ */
   render() {
     return (
       <nav
@@ -54,7 +55,7 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass} `}
             
           >
-            <Link className="navbar-item has-dropdown is-hoverable" style={{margin:'10px'}} to="/">
+            <Link className="navbar-item navbar-start has-dropdown is-hoverable is-center" style={{margin:'40px'}} to="/">
             <div class="navbar-start">
                   <a class="navbar-link">
                     Club
@@ -79,7 +80,7 @@ const Navbar = class extends React.Component {
 
                 </div>
               </Link>            
-              <Link className="navbar-item has-dropdown is-hoverable" style={{margin:'10px'}} to="/">
+              <Link className="navbar-item has-dropdown is-hoverable" style={{margin:'40px'}} to="/">
                 <div class="navbar-start">
                   <a class="navbar-link">
                     Effectifs
@@ -103,11 +104,11 @@ const Navbar = class extends React.Component {
             <Link to="/" className="" title="Logo">
               <img src={logo} alt="FCS" style={{ width: '125px'}} />
             </Link>
-            <Link className="navbar-item" style={{margin:'10px'}} to="/about">
+            <Link className="navbar-item" style={{margin:'40px'}} to="/about">
                 Partenaires
             </Link>         
   
-            <Link className="navbar-item" style={{margin:'10px'}} to="/products">
+            <Link className="navbar-item" style={{margin:'40px'}} to="/products">
                 Boutique
               </Link>
           </div> 
@@ -115,7 +116,8 @@ const Navbar = class extends React.Component {
       </div>
       <div className="column is-4 social" style={{position : 'absolute', margin: 'right'}}>
                 <a title="facebook" href="https://www.facebook.com/Futsal-Club-Suc%C3%A9en-345620518839889">
-                  <img
+                  <img 
+                  className="fas fa-lg is-hoverable"
                     src={facebook}
                     alt="Facebook"
                     style={{ width: '1em', height: '1em' }}
@@ -131,6 +133,7 @@ const Navbar = class extends React.Component {
                 </a>
                 <a title="instagram" href="https://www.instagram.com/futsal_club_suceen/">
                   <img
+                    className="fas fa-lg is-hoverable"
                     src={instagram}
                     alt="Instagram"
                     style={{ width: '1em', height: '1em' }}
