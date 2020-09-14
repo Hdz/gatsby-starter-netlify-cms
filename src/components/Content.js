@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { GoogleMap, Marker } from "react-google-maps"
 
 export const HTMLContent = ({ content, className }) => (
   <div className={className} dangerouslySetInnerHTML={{ __html: content }} />
@@ -15,5 +16,14 @@ Content.propTypes = {
 }
 
 HTMLContent.propTypes = Content.propTypes
+
+
+export const MyMapComponent = (props) =>
+  <GoogleMap
+    defaultZoom={8}
+    defaultCenter={{ lat: 47.330209, lng: -1.5219381 }}
+  >
+    {props.isMarkerShown && <Marker position={{ lat: 47.330209, lng: -1.5219381 }} />}
+  </GoogleMap>
 
 export default Content

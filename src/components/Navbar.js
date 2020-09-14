@@ -45,7 +45,7 @@ const Navbar = class extends React.Component {
       >
         <div className="container">
           <div className="navbar-brand"
-               style={{position: 'relative', left: '50%', top: '50%', transform: 'translate(-50%, -50%)'}}
+               style={{position: 'relative', left: '52%', top: '50%', transform: 'translate(-50%, -50%)'}}
           >
 
            
@@ -54,20 +54,60 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass} `}
             
           >
-            <Link className="navbar-item" style={{margin:'10px'}} to="/">
-                Club
-              </Link>            
-              <Link className="navbar-item" style={{margin:'10px'}} to="/">
-                Effectifs
-              </Link>
+            <Link className="navbar-item has-dropdown is-hoverable" style={{margin:'10px'}} to="/">
+            <div class="navbar-start">
+                  <a class="navbar-link">
+                    Club
+                  </a>
+                    <div class="navbar-dropdown">
+                      <Link class="navbar-item">
+                        Présentation
+                      </Link>
+                      <hr class="navbar-divider" />
+                      <Link class="navbar-item">
+                        Organigramme
+                      </Link>
+                      <hr class="navbar-divider" />
+                      <Link class="navbar-item">
+                        Vie du club
+                      </Link>
+                      <hr class="navbar-divider" />
+                      <Link class="navbar-item">
+                        Gallerie
+                      </Link>
+                    </div>
 
+                </div>
+              </Link>            
+              <Link className="navbar-item has-dropdown is-hoverable" style={{margin:'10px'}} to="/">
+                <div class="navbar-start">
+                  <a class="navbar-link">
+                    Effectifs
+                  </a>
+                    <div class="navbar-dropdown">
+                      <Link class="navbar-item">
+                        Équipe A
+                      </Link>
+                      <hr class="navbar-divider" />
+                      <Link class="navbar-item">
+                        Équipe B
+                      </Link>
+                      <hr class="navbar-divider" />
+                      <a class="navbar-item">
+                        Loisirs
+                      </a>
+                    </div>
+
+                </div>
+              </Link>
             <Link to="/" className="" title="Logo">
               <img src={logo} alt="FCS" style={{ width: '125px'}} />
             </Link>
             <Link className="navbar-item" style={{margin:'10px'}} to="/about">
                 Partenaires
             </Link>         
-            <Link className="navbar-item dropdown" style={{margin:'10px'}} to="/products">
+  
+            <Link className="navbar-item" style={{margin:'10px'}} to="/products">
                 Boutique
               </Link>
           </div> 
