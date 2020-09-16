@@ -34,6 +34,7 @@
     "react-dom": "^16.8.4",
     "react-google-maps": "^9.4.5",
     "react-helmet": "^6.0.0",
+    "react-slick": "^0.27.11",
     "uuid": "^7.0.0"
   },
   "keywords": [

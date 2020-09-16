@@ -16,6 +16,13 @@ module.exports = {
       },
     },
     {
+          resolve: `@ccalamos/gatsby-source-googlemaps-static`,
+          options: {
+              key: `AIzaSyCsVKtUInebnV5LUUYC7peWJr6y6-_hpNw`,
+              center: `47.330209,-1.5219381`,
+          },
+        },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages`,
