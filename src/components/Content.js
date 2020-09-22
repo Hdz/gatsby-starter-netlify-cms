@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import { GoogleMap, Marker } from "react-google-maps"
+import Slider from "react-slick";
 
 export const HTMLContent = ({ content, className }) => (
   <div className={className} dangerouslySetInnerHTML={{ __html: content }} />
@@ -10,7 +11,7 @@ const Content = ({ content, className }) => (
   <div className={className}>{content}</div>
 )
 
-export class SimpleSlider {
+export class SimpleSlider extends Component {
   render() {
     const settings = {
       dots: true,
