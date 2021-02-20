@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
-import { GoogleMap, Marker } from "react-google-maps"
 import Slider from "react-slick";
 
 export const HTMLContent = ({ content, className }) => (
@@ -57,12 +56,5 @@ Content.propTypes = {
 HTMLContent.propTypes = Content.propTypes
 
 
-export const MyMapComponent = (props) =>
-  <GoogleMap
-    defaultZoom={8}
-    defaultCenter={{ lat: 47.330209, lng: -1.5219381 }}
-  >
-    {props.isMarkerShown && <Marker position={{ lat: 47.330209, lng: -1.5219381 }} />}
-  </GoogleMap>
 
 export default Content

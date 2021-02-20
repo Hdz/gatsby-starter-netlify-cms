@@ -16,27 +16,6 @@ const Navbar = class extends React.Component {
     }
   }
 
-  /* Mis en commentaire parce qu'on ne veut pas garder l'état pour les dropdown
-    toggleHamburger = () => {
-    // toggle the active boolean in the state
-    this.setState(
-      {
-        active: !this.state.active,
-      },
-      // after state has been updated,
-      () => {
-        // set the class in state for the navbar accordingly
-        this.state.active
-          ? this.setState({
-              navBarActiveClass: 'is-active',
-            })
-          : this.setState({
-              navBarActiveClass: '',
-            })
-      }
-    )
-  }
- */
   render() {
     return (
       <nav
@@ -104,7 +83,7 @@ const Navbar = class extends React.Component {
             <Link to="/" className="" title="Logo">
               <img src={logo} alt="FCS" style={{ width: '125px'}} />
             </Link>
-            <Link className="navbar-item" style={{margin:'40px'}} to="/about">
+            <Link className="navbar-item" style={{margin:'40px'}} to="/partner">
                 Partenaires
             </Link>         
   
