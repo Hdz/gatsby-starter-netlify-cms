@@ -1,19 +1,72 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
-
+import GoogleMaps from '../components/GoogleMaps'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/swiper.scss';
 
 export const IndexPageTemplate = ({
   image,
-  title,
   mainpitch,
   description,
   intro,
 }) => (
   <div>
+    
+    <Swiper
+      spaceBetween={50}
+      loop={true}
+      slidesPerView={3}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
+    >
+      <SwiperSlide>          
+        <div class="column is-flex is-vcentered is-centered">
+          <a href="https://www.cafecharbon.fr/" >
+            <figure class="image is-128x128 is-inline-block">
+                <img src="https://www.cafecharbon.fr/s/misc/logo.jpg?t=1600436199" class="image is128x128 is-centered" alt="Café Charbon" />
+            </figure>
+          </a>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>          
+        <div className="swiper-slide">
+          <div class="column is-flex is-vcentered is-centered">
+            <a href="https://www.cafecharbon.fr/" >
+              <figure class="image is-128x128 is-inline-block">
+                <img src="https://www.cafecharbon.fr/s/misc/logo.jpg?t=1600436199" class="image is128x128 is-centered" alt="Café Charbon" />
+              </figure>
+            </a>
+          </div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+            <a href="https://www.couvreur-viaud.com/">
+              <p class="image is-128x128">
+                <img
+                  src="https://s3.eu-central-1.amazonaws.com/uberall-userpics-prod/1288106/1FqIwZ90U6.png"
+                  alt="SuperU"
+                />
+              </p>
+            </a>
+      </SwiperSlide>
+      <SwiperSlide>
+            <a href="https://www.couvreur-viaud.com/">
+              <p class="image is-128x128">
+                <img
+                  src="https://s3.eu-central-1.amazonaws.com/uberall-userpics-prod/1288106/1FqIwZ90U6.png"
+                  alt="SuperU"
+                />
+              </p>
+            </a>
+      </SwiperSlide>
+    
+    </Swiper>
+
     <div
       className="full-width-image margin-top-0"
       style={{
@@ -34,19 +87,11 @@ export const IndexPageTemplate = ({
           flexDirection: 'column',
         }}
       >
-        <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-          style={{
-            boxShadow:
-              'rgb(0, 0, 0) 0.5rem 0px 0px, rgb(0, 0, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(0, 0, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
-        >
-          {title}
-        </h1>
+
+      <GoogleMaps />
+
+
+
       </div>
     </div>
     <section className="section section--gradient">

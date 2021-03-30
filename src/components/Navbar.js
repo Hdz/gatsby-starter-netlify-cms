@@ -40,7 +40,7 @@ const Navbar = class extends React.Component {
                     Club
                   </Link>
                     <div className="navbar-dropdown">
-                      <Link className="navbar-item">
+                      <Link className="navbar-item" to="/presentation">
                         Présentation
                       </Link>
                       <hr className="navbar-divider" />
@@ -49,7 +49,7 @@ const Navbar = class extends React.Component {
                       </Link>
                       <hr className="navbar-divider" />
                       <Link className="navbar-item">
-                        Vie du club
+                        Contact
                       </Link>
                       <hr className="navbar-divider" />
                       <Link className="navbar-item">
@@ -94,30 +94,30 @@ const Navbar = class extends React.Component {
         </div>
       </div>
       <div className="column is-4 social" style={{position : 'absolute', margin: 'right'}}>
-                <Link title="facebook" href="https://www.facebook.com/Futsal-Club-Suc%C3%A9en-345620518839889">
+                <a title="facebook" href="https://www.facebook.com/Futsal-Club-Suc%C3%A9en-345620518839889">
                   <img 
                   className="fas fa-lg is-hoverable"
                     src={facebook}
                     alt="Facebook"
                     style={{ width: '1em', height: '1em' }}
                   />
-                </Link>
-                <Link title="twitter" href="https://twitter.com/FCSuceen">
+                </a>
+                <a title="twitter" href="https://twitter.com/FCSuceen">
                   <img
                     className="fas fa-lg"
                     src={twitter}
                     alt="Twitter"
                     style={{ width: '1em', height: '1em' }}
                   />
-                </Link>
-                <Link title="instagram" href="https://www.instagram.com/futsal_club_suceen/">
+                </a>
+                <a title="instagram" href="https://www.instagram.com/futsal_club_suceen/">
                   <img
                     className="fas fa-lg is-hoverable"
                     src={instagram}
                     alt="Instagram"
                     style={{ width: '1em', height: '1em' }}
                   />
-                </Link>
+                </a>
               </div>
     </nav>
     )

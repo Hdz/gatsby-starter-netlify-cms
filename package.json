@@ -35,6 +35,7 @@
     "react-google-maps": "^9.4.5",
     "react-helmet": "^6.0.0",
     "react-slick": "^0.27.11",
+    "swiper": "^6.5.0",
     "uuid": "^7.0.0"
   },
   "keywords": [

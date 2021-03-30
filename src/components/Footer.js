@@ -11,11 +11,13 @@ const Footer = class extends React.Component {
     return (
       <footer className="footer has-background-black has-text-white-ter">
         <div className="content has-text-centered">
-        <Link to="/" className=""><img
+        <Link to="/" className="">
+          <img
             src={logo}
             alt="FCS"
             style={{ width: '125px' }}
-          /></Link>
+          />
+          </Link>
         </div>
         <div className="content has-text-centered has-background-black has-text-white-ter">
           <div className="container has-background-black has-text-white-ter">
@@ -50,9 +52,9 @@ const Footer = class extends React.Component {
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="https://hdz.github.io/FCS-Training/">
+                      <a className="navbar-item" href="https://hdz.github.io/FCS-Training/">
                         Plateforme du FCS
-                      </Link>
+                      </a>
                     </li>
                     <li>
                       <Link className="navbar-item" to="/contact">

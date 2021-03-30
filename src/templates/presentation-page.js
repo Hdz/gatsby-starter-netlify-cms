@@ -5,8 +5,16 @@ import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import * as styles from'../components/partner.modules.sass'
 
-export const PartnerPageTemplate = ({ title, content, contentComponent }) => {
+export const PresentationPageTemplate = ({ 
+  title, 
+  content, 
+  contentComponent,
+  mainpitch,
+  description,
+  intro, 
+}) => {
   const PageContent = contentComponent || Content
+
 
   return (
     <section className={`${styles.section} ${styles.sectionGradient}`}>
@@ -27,38 +35,41 @@ export const PartnerPageTemplate = ({ title, content, contentComponent }) => {
   )
 }
 
-PartnerPageTemplate.propTypes = {
+PresentationPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
 
-const PartnerPage = ({ data }) => {
+const PresentationPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
     <Layout>
-      <PartnerPageTemplate
+      <PresentationPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
+        description={post.frontmatter.description}
+
       />
     </Layout>
   )
 }
 
-PartnerPage.propTypes = {
+PresentationPage.propTypes = {
   data: PropTypes.object.isRequired,
 }
 
-export default PartnerPage
+export default PresentationPage
 
-export const partnerPageQuery = graphql`
-  query PartnerPage($id: String!) {
+export const presentationPageQuery = graphql`
+  query PresentationPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
         title
+        description
       }
     }
   }

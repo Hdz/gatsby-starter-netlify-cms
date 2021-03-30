@@ -1,0 +1,39 @@
+$black :    #000
+$gold :     #FFD700
+$green :    #00861e
+$amount :     2
+$color :    #FFF
+$grey:      #cfcfcf
+
+title
+
+a:hover
+    color : $green
+a,link
+    color : $black
+    
+.media div,article,img p
+  animation-name: fade-in
+  animation-fill-mode: both
+  animation-duration: 1s
+.media div:hover,article:hover
+    background-color: #F0F0F0
+    opacity: 10%
+    border-radius: 5px
+
+@for $i from 1 to 3
+  .media div,article,img p:nth-child(#{$i})  
+      animation-delay: $i * 0.1s
+
+@keyframes fade-in
+    0%
+        opacity: 0
+
+
+    100%
+        opacity: 1
+
+.center
+    height: auto
+    display: inline-block
+    vertical-align: middle
