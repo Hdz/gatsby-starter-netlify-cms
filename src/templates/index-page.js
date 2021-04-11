@@ -88,7 +88,7 @@ export const IndexPageTemplate = ({
         }}
       >
 
-      <GoogleMaps />
+      {/* <GoogleMaps /> */}
 
 
 
