@@ -4,6 +4,9 @@ import { Link, graphql } from 'gatsby'
 import GoogleMaps from '../components/GoogleMaps'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
+import cafecharbonImg from '../img/Cafecharbon.png'
+import superuImg from '../img/SuperULogo128.png'
+
 import BlogRoll from '../components/BlogRoll'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -25,46 +28,45 @@ export const IndexPageTemplate = ({
       onSwiper={(swiper) => console.log(swiper)}
     >
       <SwiperSlide>          
-        <div class="column is-flex is-vcentered is-centered">
-          <a href="https://www.cafecharbon.fr/" >
-            <figure class="image is-128x128 is-inline-block">
-                <img src="https://www.cafecharbon.fr/s/misc/logo.jpg?t=1600436199" class="image is128x128 is-centered" alt="Café Charbon" />
-            </figure>
-          </a>
-        </div>
+      <a href="https://www.magasins-u.com/">
+              <p class="image is-128x128">
+                <img
+                  src={cafecharbonImg}
+                  alt="Cafe Charbon"
+                />
+              </p>
+            </a>
       </SwiperSlide>
       <SwiperSlide>          
-        <div className="swiper-slide">
-          <div class="column is-flex is-vcentered is-centered">
-            <a href="https://www.cafecharbon.fr/" >
-              <figure class="image is-128x128 is-inline-block">
-                <img src="https://www.cafecharbon.fr/s/misc/logo.jpg?t=1600436199" class="image is128x128 is-centered" alt="Café Charbon" />
-              </figure>
-            </a>
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-            <a href="https://www.couvreur-viaud.com/">
+        <a href="https://www.magasins-u.com/">
               <p class="image is-128x128">
                 <img
-                  src="https://s3.eu-central-1.amazonaws.com/uberall-userpics-prod/1288106/1FqIwZ90U6.png"
+                  src={cafecharbonImg}
+                  alt="Cafe Charbon"
+                />
+              </p>
+            </a>
+      </SwiperSlide>
+      <SwiperSlide>
+            <a href="https://www.magasins-u.com/">
+              <p class="image is-128x128">
+                <img
+                  src={superuImg}
                   alt="SuperU"
                 />
               </p>
             </a>
       </SwiperSlide>
       <SwiperSlide>
-            <a href="https://www.couvreur-viaud.com/">
+            <a href="https://www.magasins-u.com/">
               <p class="image is-128x128">
                 <img
-                  src="https://s3.eu-central-1.amazonaws.com/uberall-userpics-prod/1288106/1FqIwZ90U6.png"
+                  src={superuImg}
                   alt="SuperU"
                 />
               </p>
             </a>
-      </SwiperSlide>
-    
+      </SwiperSlide>    
     </Swiper>
 
     <div
