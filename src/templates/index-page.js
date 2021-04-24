@@ -4,8 +4,8 @@ import { Link, graphql } from 'gatsby'
 import GoogleMaps from '../components/GoogleMaps'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
-import cafecharbonImg from '../img/Cafecharbon.png'
-import superuImg from '../img/SuperULogo128.png'
+import cafecharbonImg from '../../static/img/Cafecharbon.png'
+import superuImg from '../../static/img/SuperULogo128.png'
 
 import BlogRoll from '../components/BlogRoll'
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -19,8 +19,8 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
-    
-    <Swiper
+      
+      <Swiper
       spaceBetween={50}
       loop={true}
       slidesPerView={3}
@@ -96,6 +96,7 @@ export const IndexPageTemplate = ({
 
       </div>
     </div>
+    
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
