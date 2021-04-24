@@ -15,6 +15,13 @@ module.exports = {
         name: 'uploads',
       },
     },
+    // {
+    //       resolve: `@ccalamos/gatsby-source-googlemaps-static`,
+    //       options: {
+    //           key: `GOOGLE_API_KEY`,
+    //           center: `47.330209,-1.5219381`,
+    //       },
+    //     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {

@@ -49,11 +49,11 @@ export default class Index extends React.Component {
                 onSubmit={this.handleSubmit}
               >
                 {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-                <input type="hidden" name="form-name" value="contact" />
+                <input type="hidden" name="form-name" aria-label="controle" value="contact" />
                 <div hidden>
                   <label>
                     Don’t fill this out:{' '}
-                    <input name="bot-field" onChange={this.handleChange} />
+                    <input name="bot-field" aria-label="controle" onChange={this.handleChange} />
                   </label>
                 </div>
                 <div className="field">
@@ -68,6 +68,7 @@ export default class Index extends React.Component {
                       onChange={this.handleChange}
                       id={'name'}
                       required={true}
+                      aria-label="controle"
                     />
                   </div>
                 </div>
@@ -83,6 +84,7 @@ export default class Index extends React.Component {
                       onChange={this.handleChange}
                       id={'email'}
                       required={true}
+                      aria-label="controle"
                     />
                   </div>
                 </div>
@@ -90,13 +92,14 @@ export default class Index extends React.Component {
                   <label className="label" htmlFor={'message'}>
                     Message
                   </label>
-                  <div className="control">
+                  <div className="control" aria-label="controle">
                     <textarea
                       className="textarea"
                       name={'message'}
                       onChange={this.handleChange}
                       id={'message'}
                       required={true}
+                      aria-label="controle"
                     />
                   </div>
                 </div>

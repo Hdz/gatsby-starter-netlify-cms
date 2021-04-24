@@ -16,27 +16,6 @@ const Navbar = class extends React.Component {
     }
   }
 
-  /* Mis en commentaire parce qu'on ne veut pas garder l'état pour les dropdown
-    toggleHamburger = () => {
-    // toggle the active boolean in the state
-    this.setState(
-      {
-        active: !this.state.active,
-      },
-      // after state has been updated,
-      () => {
-        // set the class in state for the navbar accordingly
-        this.state.active
-          ? this.setState({
-              navBarActiveClass: 'is-active',
-            })
-          : this.setState({
-              navBarActiveClass: '',
-            })
-      }
-    )
-  }
- */
   render() {
     return (
       <nav
@@ -56,24 +35,24 @@ const Navbar = class extends React.Component {
             
           >
             <Link className="navbar-item navbar-start has-dropdown is-hoverable is-center" style={{margin:'40px'}} to="/">
-            <div class="navbar-start">
-                  <a class="navbar-link">
+            <div className="navbar-start">
+                  <Link className="navbar-link">
                     Club
-                  </a>
-                    <div class="navbar-dropdown">
-                      <Link class="navbar-item">
+                  </Link>
+                    <div className="navbar-dropdown">
+                      <Link className="navbar-item" to="/presentation">
                         Présentation
                       </Link>
-                      <hr class="navbar-divider" />
+                      <hr className="navbar-divider" />
                       <Link class="navbar-item">
                         Organigramme
                       </Link>
-                      <hr class="navbar-divider" />
-                      <Link class="navbar-item">
-                        Vie du club
+                      <hr className="navbar-divider" />
+                      <Link className="navbar-item">
+                        Contact
                       </Link>
-                      <hr class="navbar-divider" />
-                      <Link class="navbar-item">
+                      <hr className="navbar-divider" />
+                      <Link className="navbar-item">
                         Gallerie
                       </Link>
                     </div>
@@ -81,22 +60,22 @@ const Navbar = class extends React.Component {
                 </div>
               </Link>            
               <Link className="navbar-item has-dropdown is-hoverable" style={{margin:'40px'}} to="/">
-                <div class="navbar-start">
-                  <a class="navbar-link">
+                <div className="navbar-start">
+                  <Link className="navbar-link">
                     Effectifs
-                  </a>
-                    <div class="navbar-dropdown">
-                      <Link class="navbar-item">
+                  </Link>
+                    <div className="navbar-dropdown">
+                      <Link className="navbar-item">
                         Équipe A
                       </Link>
                       <hr class="navbar-divider" />
-                      <Link class="navbar-item">
+                      <Link className="navbar-item">
                         Équipe B
                       </Link>
-                      <hr class="navbar-divider" />
-                      <a class="navbar-item">
+                      <hr className="navbar-divider" />
+                      <Link className="navbar-item">
                         Loisirs
-                      </a>
+                      </Link>
                     </div>
 
                 </div>
@@ -104,7 +83,7 @@ const Navbar = class extends React.Component {
             <Link to="/" className="" title="Logo">
               <img src={logo} alt="FCS" style={{ width: '125px'}} />
             </Link>
-            <Link className="navbar-item" style={{margin:'40px'}} to="/about">
+            <Link className="navbar-item" style={{margin:'40px'}} to="/partner">
                 Partenaires
             </Link>         
   
@@ -142,7 +121,7 @@ const Navbar = class extends React.Component {
               </div>
     </nav>
     )
+    
   }
 }
-
 export default Navbar
