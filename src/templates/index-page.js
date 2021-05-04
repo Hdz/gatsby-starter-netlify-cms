@@ -10,8 +10,8 @@ import superuImg from '../../static/img/SuperULogo128.png'
 import BlogRoll from '../components/BlogRoll'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import "swiper/swiper.min.css";
 import 'swiper/swiper.scss';
-import "swiper/components/effect-fade/effect-fade.scss";
 
 
 export const IndexPageTemplate = ({
@@ -23,11 +23,13 @@ export const IndexPageTemplate = ({
   <div>
       
       <Swiper
+      centeredSlides={true}
       spaceBetween={50}
       loop={true}
       slidesPerView={3}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
+      className="FCSSwiper"
     >
       <SwiperSlide>          
       <a href="https://www.magasins-u.com/">
