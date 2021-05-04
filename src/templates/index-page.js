@@ -11,6 +11,8 @@ import BlogRoll from '../components/BlogRoll'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/swiper.scss';
+import "swiper/components/effect-fade/effect-fade.scss";
+
 
 export const IndexPageTemplate = ({
   image,
