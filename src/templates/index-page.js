@@ -10,9 +10,13 @@ import superuImg from '../../static/img/SuperULogo128.png'
 import BlogRoll from '../components/BlogRoll'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import "swiper/swiper.min.css";
 import 'swiper/swiper.scss';
-
+import '../components/swiper.modules.css';
+import 'swiper/swiper.scss';
+import 'swiper/components/navigation/navigation.scss';
+import 'swiper/components/pagination/pagination.scss';
+import 'swiper/components/scrollbar/scrollbar.scss';
+import 'swiper/components/effect-cube/effect-cube.scss';
 
 export const IndexPageTemplate = ({
   image,
@@ -23,13 +27,11 @@ export const IndexPageTemplate = ({
   <div>
       
       <Swiper
-      centeredSlides={true}
       spaceBetween={50}
       loop={true}
       slidesPerView={3}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
-      className="FCSSwiper"
     >
       <SwiperSlide>          
       <a href="https://www.magasins-u.com/">
