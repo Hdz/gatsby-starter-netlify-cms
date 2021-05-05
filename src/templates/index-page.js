@@ -12,11 +12,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/swiper.scss';
 import '../components/swiper.modules.css';
-import 'swiper/swiper.scss';
-import 'swiper/components/navigation/navigation.scss';
-import 'swiper/components/pagination/pagination.scss';
-import 'swiper/components/scrollbar/scrollbar.scss';
-import 'swiper/components/effect-cube/effect-cube.scss';
 
 export const IndexPageTemplate = ({
   image,
@@ -27,8 +22,10 @@ export const IndexPageTemplate = ({
   <div>
       
       <Swiper
-      spaceBetween={50}
+      spaceBetween={30}
+      freeMode={true}
       loop={true}
+      centeredSlides={true}
       slidesPerView={3}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
