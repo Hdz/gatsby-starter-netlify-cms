@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import './all.sass'
 import logo from '../img/logo.png'
 import facebook from '../img/social/facebook.svg'
 import instagram from '../img/social/instagram.svg'
 import twitter from '../img/social/twitter.svg'
+import './navbar.sass'
 
 
 const Navbar = class extends React.Component {

@@ -13,6 +13,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.scss';
 import '../components/swiper.modules.css';
 
+
 export const IndexPageTemplate = ({
   image,
   mainpitch,
