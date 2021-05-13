@@ -9,10 +9,12 @@ import superuImg from '../../static/img/SuperULogo128.png'
 
 import BlogRoll from '../components/BlogRoll'
 import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Autoplay } from 'swiper';
 
 import 'swiper/swiper.scss';
 import '../components/swiper.modules.css';
 
+SwiperCore.use([Autoplay]);
 
 export const IndexPageTemplate = ({
   image,
@@ -26,11 +28,14 @@ export const IndexPageTemplate = ({
       spaceBetween={30}
       freeMode={true}
       loop={true}
+      autoplay={true}
       centeredSlides={true}
       slidesPerView={3}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
+      
     >
+      
       <SwiperSlide>          
       <a href="https://www.magasins-u.com/">
               <p class="image is-128x128">

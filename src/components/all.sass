@@ -4,10 +4,27 @@ $body-color: #333
 $black: #2b2523
 $gold: #FFD700
 $primary: $black
-$primary-invert: $gold
-.navbar .navbar-menu
+$primary-invert: $black
+$navbar-item-color: $black !default
+$navbar-burger-color: $gold !default
+$navbar-tab-hover-background-color: transparent !default
+$navbar-dropdown-item-hover-color: $gold
+$navbar-dropdown-item-hover-background-color : $black
+$navbar-dropdown-item-active-background-color : $gold
+$navbar-dropdown-item-active-color : $gold
+$navbar-item-color: $black !default
+$navbar-item-hover-color: $gold !default
+$navbar-item-hover-background-color: transparent !default
+$navbar-item-active-color: $gold !default
+$navbar-item-active-background-color: transparent !default
+$navbar-item-img-max-height: 1.75rem !default 
+$navbar-dropdown-radius: $gold
+$navbar-dropdown-border-top : $gold
+
+.navbar .navbar-menu 
   box-shadow:none !important
   color: $gold
+
 
 .content .taglist
   list-style: none
@@ -81,8 +98,9 @@ $primary-invert: $gold
 
 footer.footer
   padding: 3rem 0rem 0rem
-  background-color: transparent
+  background-color: #239600
       text-decoration: underline
+      
 //Menu overrides
 $menu-item-color: $gold
 $menu-item-hover-color: $gold !important
@@ -92,6 +110,11 @@ $menu-item-active-background-color:	$gold
 $menu-list-border-left: 1px solid $gold
 $menu-label-color: $gold
 
+=navbar-fixed
+  left: 0
+  position: fixed
+  right: 0
+  z-index: $navbar-fixed-z
 
 .menu-label
   font-size: 1em !important
@@ -102,6 +125,22 @@ $menu-label-color: $gold
   text-align: left
 .social
   padding: 2em
+
+  .navbar-link
+    align-items: center
+    display: flex
+  .navbar-item
+    &.has-dropdown
+      align-items: stretch
+    &.has-dropdown-up
+      .navbar-link::after
+        transform: rotate(135deg) translate(0.25em, -0.25em)
+      .navbar-dropdown
+        border-bottom: $navbar-dropdown-border-top
+        border-radius: $navbar-dropdown-radius $navbar-dropdown-radius 0 0
+        border-top: none
+        bottom: 100%
+        box-shadow: 0 -8px 8px bulmaRgba($white-ter, 0.1)
 
 .social a
     padding: .5em .5em .3em .5em
@@ -116,13 +155,17 @@ $menu-label-color: $gold
 
 .social a:hover,
 .social a:focus 
-  color: #333
+  color: $black
   background-color: $gold
+
+
+  // Hover/Active states
+$navbar-dropdown-arrow: $gold !default
 
 
 // blog roll
 .blog-list-item.is-featured
-  background-color: #239600
+  background-color: $white-ter
 .blog-list-item header
   display: flex
   margin-bottom: 1em
@@ -133,6 +176,10 @@ $menu-label-color: $gold
 
 @import "~bulma"
 
+.navbar-burger
+  color: $navbar-burger-color
+  +hamburger($navbar-height)
+  margin-left: auto
 
 // responsiveness
 +tablet-only
