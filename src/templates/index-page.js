@@ -12,7 +12,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Autoplay } from 'swiper';
 
 import 'swiper/swiper.scss';
-import '../components/swiper.modules.css';
+import '../components/swiper.modules.sass';
 
 SwiperCore.use([Autoplay]);
 
@@ -25,7 +25,6 @@ export const IndexPageTemplate = ({
   <div>
       
       <Swiper
-      spaceBetween={30}
       freeMode={true}
       loop={true}
       autoplay={true}
@@ -33,12 +32,11 @@ export const IndexPageTemplate = ({
       slidesPerView={3}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
-      
     >
       
       <SwiperSlide>          
-      <a href="https://www.magasins-u.com/">
-              <p class="image is-128x128">
+      <a href="https://www.magasins-u.com/" className="swiper-slide">
+              <p class="image is-128x128" className="swiper-slide">
                 <img
                   src={cafecharbonImg}
                   alt="Cafe Charbon"
@@ -47,8 +45,8 @@ export const IndexPageTemplate = ({
             </a>
       </SwiperSlide>
       <SwiperSlide>          
-        <a href="https://www.magasins-u.com/">
-              <p class="image is-128x128">
+        <a href="https://www.magasins-u.com/" className="swiper-slide">
+              <p class="image is-128x128" className="swiper-slide">
                 <img
                   src={cafecharbonImg}
                   alt="Cafe Charbon"
@@ -57,8 +55,8 @@ export const IndexPageTemplate = ({
             </a>
       </SwiperSlide>
       <SwiperSlide>
-            <a href="https://www.magasins-u.com/">
-              <p class="image is-128x128">
+            <a href="https://www.magasins-u.com/" className="swiper-slide">
+              <p class="image is-128x128" className="swiper-slide">
                 <img
                   src={superuImg}
                   alt="SuperU"

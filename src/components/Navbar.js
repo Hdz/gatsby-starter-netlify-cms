@@ -24,7 +24,7 @@ const Navbar = class extends React.Component {
       >
         <div className="container">
           <div className="navbar-brand"
-               style={{position: 'relative', left: '52%', top: '50%', transform: 'translate(-50%, -50%)'}}
+               style={{position: 'relative', textAlign:'center' , margin: '0px auto'}}
           >
 
            
@@ -33,7 +33,7 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass} `}
             
           >
-            <Link className="navbar-item navbar-start has-dropdown is-hoverable is-center" style={{margin:'40px'}} to="/">
+            <Link className="navbar-item navbar-start has-dropdown is-hoverable" style={{margin:'40px'}} to="/">
             <div className="navbar-start">
                   <Link className="navbar-link">
                     Club
@@ -79,8 +79,8 @@ const Navbar = class extends React.Component {
 
                 </div>
               </Link>
-            <Link to="/" className="" title="Logo">
-              <img src={logo} alt="FCS" style={{ width: '125px'}} />
+            <Link to="/" className="content has-text-centered" title="Logo">
+              <img src={logo} alt="FCS" style={{width: '125px'}} />
             </Link>
             <Link className="navbar-item" style={{margin:'40px'}} to="/partner">
                 Partenaires
