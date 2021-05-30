@@ -8,10 +8,8 @@ title: "DÉCOUVREZ NOS PARTENAIRES :"
   <figure class="media-left">
     <p class="image is-128x128">
 
+</p>
 
-![](/img/Cafecharbon.png "Café Charbon")
-
-\    </p>
   </figure>
   <div class="media-content">
     <div class="content">
