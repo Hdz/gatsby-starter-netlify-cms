@@ -1,14 +1,13 @@
 ---
 templateKey: partner-page
 path: /partner
-title: 'DÉCOUVREZ NOS PARTENAIRES :' 
+title: "DÉCOUVREZ NOS PARTENAIRES :"
 ---
-
 <article class="media">
 <a href="https://www.cafecharbon.fr/" >
   <figure class="media-left">
     <p class="image is-128x128">
-      <img src="https://www.cafecharbon.fr/s/misc/logo.jpg?t=1600436199" class="center">
+      <img src="" class="center" />
     </p>
   </figure>
   <div class="media-content">
@@ -28,7 +27,6 @@ title: 'DÉCOUVREZ NOS PARTENAIRES :'
      </a>
   </div>
 </article>
-
 
 <article class="media">
 <a href="https://www.couvreur-viaud.com/" >
