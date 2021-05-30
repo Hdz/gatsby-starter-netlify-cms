@@ -7,8 +7,11 @@ title: "DÉCOUVREZ NOS PARTENAIRES :"
 <a href="https://www.cafecharbon.fr/" >
   <figure class="media-left">
     <p class="image is-128x128">
-      <img src="" class="center" />
-    </p>
+
+
+![](/img/Cafecharbon.png "Café Charbon")
+
+\    </p>
   </figure>
   <div class="media-content">
     <div class="content">
