@@ -86,11 +86,18 @@ export const IndexPageTemplate = ({
         }}
       >
     <GoogleMaps />
-
+        
 
       </div>
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'right',
+          float: 'right',
+          flexDirection: 'column',
+        }}
+      > Test Adresse</div>
 
-    
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
