@@ -17,7 +17,6 @@ import '../components/swiper.modules.sass';
 SwiperCore.use([Autoplay]);
 
 export const IndexPageTemplate = ({
-  image,
   mainpitch,
   description,
   intro,
@@ -76,34 +75,29 @@ export const IndexPageTemplate = ({
       </SwiperSlide>    
     </Swiper>
 
-    <div
-      className="full-width-image margin-top-0"
-      style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-        backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
-      }}
-    >
       <div
         style={{
           display: 'flex',
-          height: '150px',
+          height: '750px',
           lineHeight: '1',
           justifyContent: 'space-around',
           alignItems: 'left',
           flexDirection: 'column',
         }}
       >
-
-      {/* <GoogleMaps /> */}
-
-
+    <GoogleMaps />
+        
 
       </div>
-    </div>
-    
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'right',
+          float: 'right',
+          flexDirection: 'column',
+        }}
+      > Test Adresse</div>
+
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
