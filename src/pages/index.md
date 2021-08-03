@@ -9,6 +9,8 @@ mainpitch:
   description: La section futsal du FCS (dont le nom officiel en catalan est
     Futsal Club Sucéen et le diminutif FCS) est un club de futsal français fondé
     en 2008, basé à Sucé et qui évolue dans le championnat de France de Futsal
+
+    Gymnase de la Papinière, 44000 Sucé-Sur-Erdre
 description:  La section futsal du FCS.
 intro:
   blurbs:

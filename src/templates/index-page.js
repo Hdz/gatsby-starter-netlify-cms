@@ -74,29 +74,34 @@ export const IndexPageTemplate = ({
             </a>
       </SwiperSlide>    
     </Swiper>
+      <div style= {{
+      background: 'linear-gradient(to bottom, #239600, black)'
 
+      }}>
       <div
         style={{
           display: 'flex',
-          height: '750px',
-          lineHeight: '1',
+          height: '450px',
+          width:'1500px',
           justifyContent: 'space-around',
           alignItems: 'left',
-          flexDirection: 'column',
         }}
       >
     <GoogleMaps />
-        
+        <div 
+          style={{
+                  display: 'flex',
+                  textAlign:'center',
+                  alignItems: 'center',
+                  color:'white',
+          }}
+      >
+                    {mainpitch.description}
+</div>
+</div>
 
       </div>
-      <div
-        style={{
-          display: 'flex',
-          alignItems: 'right',
-          float: 'right',
-          flexDirection: 'column',
-        }}
-      > Test Adresse</div>
+
 
     <section className="section section--gradient">
       <div className="container">
@@ -104,23 +109,12 @@ export const IndexPageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
-                <div className="content">
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
-                  </div>
-                  <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
-                </div>
                 <div className="columns">
-                  <div className="column is-12">
-                    <p>{description}</p>
-                  </div>
                 </div>
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/products">
-                      Voir tous les produits
+                      LA BOUTIQUE
                     </Link>
                   </div>
                 </div>
@@ -134,7 +128,7 @@ export const IndexPageTemplate = ({
                       Lire
                     </Link>
                   </div>
-                  <Features gridItems={intro.blurbs} />
+                 {/* <Features gridItems={intro.blurbs} /> */}
                 </div>
               </div>
             </div>

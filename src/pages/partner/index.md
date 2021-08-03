@@ -6,12 +6,11 @@ intro:
   blurbs:
     - image: /img/Cafecharbon.png
       text: >
-        ***Café Charbon***
-        <small>1 Rue Amérigo Vespucci  
-        44800 St Herblain</small>  
+        1 Rue Amérigo Vespucci  
+        44800 St Herblain 
         
-        
-        Exemple de texte à mettre Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis. 
+        Exemple de texte à mettre Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, 
+        eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis. 
       link: https://www.cafecharbon.fr/
     - image: /img/SuperULogo1282.png
       text: >
