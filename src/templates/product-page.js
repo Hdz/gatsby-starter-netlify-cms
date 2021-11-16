@@ -1,38 +1,64 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
+import React from "react";
+import PropTypes from "prop-types";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
+import boutiqueFCSImg1 from "../../static/img/boutiquefcs-1.png";
+import boutiqueFCSImg2 from "../../static/img/boutiquefcs-2.png";
 
 
-export const ProductPageTemplate = ({
-  image,
-  title,
-
-}) => (
+export const ProductPageTemplate = ({ image, title }) => (
   <div className="content">
-    <div
-      className="full-width-image-container margin-top-0"
-      style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-      }}
-    >
+    <div className="full-width-image-container margin-top-0">
       <h2
         className="has-text-weight-bold is-size-1"
         style={{
-          boxShadow: '0.5rem 0 0 #000, -0.5rem 0 0 #000',
-          backgroundColor: '#000',
-          color: 'white',
-          padding: '1rem',
+          boxShadow: "0.5rem 0 0 #000, -0.5rem 0 0 #000",
+          backgroundColor: "#000",
+          color: "white",
+          padding: "1rem",
         }}
       >
-        {title}
+        La boutique du FCS
       </h2>
     </div>
-  
+    <div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-around",
+          marginTop: "-1%",
+          marginBottom: "2%",
+        }}
+      >
+        <div style={{ display: "flex", justifyContent: "Center" }}>
+          <a
+            href="https://www.helloasso.com/associations/futsal-club-suceen/evenements/boutique-club"
+            style={{ display: "flex", justifyContent: "Center" }}
+          >
+            <img
+              src={boutiqueFCSImg1}
+              alt="Boutique 1"
+              style={{ width: "70%" }}
+            />
+          </a>
+        </div>
+
+        <div style={{ display: "flex", justifyContent: "Center" }}>
+          <a
+            href="https://www.helloasso.com/associations/futsal-club-suceen/evenements/boutique-club"
+            style={{ display: "flex", justifyContent: "Center" }}
+          >
+            <img
+              src={boutiqueFCSImg2}
+              alt="Boutique 2"
+              style={{ width: "70%", height: "100%" }}
+            />
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
-)
+);
 
 ProductPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -56,10 +82,10 @@ ProductPageTemplate.propTypes = {
     description: PropTypes.string,
     plans: PropTypes.array,
   }),
-}
+};
 
 const ProductPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+  const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>
@@ -75,8 +101,8 @@ const ProductPage = ({ data }) => {
         pricing={frontmatter.pricing}
       />
     </Layout>
-  )
-}
+  );
+};
 
 ProductPage.propTypes = {
   data: PropTypes.shape({
@@ -84,9 +110,9 @@ ProductPage.propTypes = {
       frontmatter: PropTypes.object,
     }),
   }),
-}
+};
 
-export default ProductPage
+export default ProductPage;
 
 export const productPageQuery = graphql`
   query ProductPage($id: String!) {
@@ -154,13 +180,6 @@ export const productPageQuery = graphql`
           author
           quote
         }
-        full_image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
         pricing {
           heading
           description
@@ -174,4 +193,4 @@ export const productPageQuery = graphql`
       }
     }
   }
-`
+`;

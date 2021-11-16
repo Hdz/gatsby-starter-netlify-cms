@@ -6,11 +6,17 @@ heading: Site officiel du Futsal Club Sucéen.
 subheading: Site officiel du Futsal Club Sucéen.
 mainpitch:
   title: FCS
-  description: La section futsal du FCS (dont le nom officiel en catalan est
-    Futsal Club Sucéen et le diminutif FCS) est un club de futsal français fondé
-    en 2008, basé à Sucé et qui évolue dans le championnat de France de Futsal
+  description: "
+La section futsal du FCS (dont le nom officiel est le Futsal Club Sucéen)
+ est un club de futsal français fondé  en 2008, basé à Sucé-Sur-Erdre, évoluant dans le championnat départemental du district de la Loire-Atlantique de Futsal.
 
-    Gymnase de la Papinière, 44000 Sucé-Sur-Erdre
+La salle du club se trouve pile à 15 Minutes de Nantes sur les bords de l'Erdre sur lequel il fait bon vivre.  Les jours de match sont les Lundis et Vendredi au : 
+
+Gymnase de la Papinière, 
+44000 Sucé-Sur-Erdre
+"
+
+
 description:  La section futsal du FCS.
 intro:
   blurbs:
