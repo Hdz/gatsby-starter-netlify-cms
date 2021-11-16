@@ -409,4 +409,4 @@ const StyledTreeExample = () => (
   </Tree>
 );
 
-export default StyledTreeExample;
+export default StyledTreeExample
