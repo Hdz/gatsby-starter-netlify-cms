@@ -14,7 +14,7 @@ const AnyReactComponent = ({ text }) => <div>{text}</div>
 const GoogleMaps = () => (
   <div style={{ height: '100%', width: '200%' }}>
     <GoogleMapReact
-      bootstrapURLKeys={{ key: {$GOOGLE_API_KEY} }}
+      bootstrapURLKeys={{ key: process.env.$GOOGLE_API_KEY}}
       defaultCenter={defaultProps.center}
       defaultZoom={defaultProps.zoom}
         yesIWantToUseGoogleMapApiInternals
