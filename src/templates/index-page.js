@@ -1,132 +1,115 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
-import GoogleMaps from '../components/GoogleMaps'
-import Layout from '../components/Layout'
-import Features from '../components/Features'
-import cafecharbonImg from '../../static/img/Cafecharbon.png'
-import superuImg from '../../static/img/SuperULogo128.png'
+import React from "react";
+import PropTypes from "prop-types";
+import { Link, graphql } from "gatsby";
+import GoogleMaps from "../components/GoogleMaps";
+import Layout from "../components/Layout";
+import cafecharbonImg from "../../static/img/Cafecharbon.png";
+import superuImg from "../../static/img/SuperULogo128.png";
+import InstagramFeed  from 'react-ig-feed'
+import 'react-ig-feed/dist/index.css'
 
-import BlogRoll from '../components/BlogRoll'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Autoplay } from 'swiper';
+import BlogRoll from "../components/BlogRoll";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Autoplay } from "swiper";
 
-import 'swiper/swiper.scss';
-import '../components/swiper.modules.sass';
+import "swiper/swiper.scss";
+import "../components/swiper.modules.sass";
 
 SwiperCore.use([Autoplay]);
 
-export const IndexPageTemplate = ({
-  image,
-  mainpitch,
-  description,
-  intro,
-}) => (
+export const IndexPageTemplate = ({ mainpitch, description, intro }) => (
   <div>
-      
-      <Swiper
+    <Swiper
       freeMode={true}
       loop={true}
       autoplay={true}
       centeredSlides={true}
       slidesPerView={3}
-      onSlideChange={() => console.log('slide change')}
+      onSlideChange={() => console.log("slide change")}
       onSwiper={(swiper) => console.log(swiper)}
     >
-      
-      <SwiperSlide>          
-      <a href="https://www.magasins-u.com/" className="swiper-slide">
-              <p class="image is-128x128" className="swiper-slide">
-                <img
-                  src={cafecharbonImg}
-                  alt="Cafe Charbon"
-                />
-              </p>
-            </a>
-      </SwiperSlide>
-      <SwiperSlide>          
+      <SwiperSlide>
         <a href="https://www.magasins-u.com/" className="swiper-slide">
-              <p class="image is-128x128" className="swiper-slide">
-                <img
-                  src={cafecharbonImg}
-                  alt="Cafe Charbon"
-                />
-              </p>
-            </a>
+          <p class="image is-128x128" className="swiper-slide">
+            <img src={cafecharbonImg} alt="Cafe Charbon" />
+          </p>
+        </a>
       </SwiperSlide>
       <SwiperSlide>
-            <a href="https://www.magasins-u.com/" className="swiper-slide">
-              <p class="image is-128x128" className="swiper-slide">
-                <img
-                  src={superuImg}
-                  alt="SuperU"
-                />
-              </p>
-            </a>
+        <a href="https://www.magasins-u.com/" className="swiper-slide">
+          <p class="image is-128x128" className="swiper-slide">
+            <img src={cafecharbonImg} alt="Cafe Charbon" />
+          </p>
+        </a>
       </SwiperSlide>
       <SwiperSlide>
-            <a href="https://www.magasins-u.com/">
-              <p class="image is-128x128">
-                <img
-                  src={superuImg}
-                  alt="SuperU"
-                />
-              </p>
-            </a>
-      </SwiperSlide>    
+        <a href="https://www.magasins-u.com/" className="swiper-slide">
+          <p class="image is-128x128" className="swiper-slide">
+            <img src={superuImg} alt="SuperU" />
+          </p>
+        </a>
+      </SwiperSlide>
+      <SwiperSlide>
+        <a href="https://www.magasins-u.com/">
+          <p class="image is-128x128">
+            <img src={superuImg} alt="SuperU" />
+          </p>
+        </a>
+      </SwiperSlide>
     </Swiper>
-
     <div
-      className="full-width-image margin-top-0"
       style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-        backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
+        background: "linear-gradient(to bottom, #239600, black)",
       }}
     >
       <div
         style={{
-          display: 'flex',
-          height: '150px',
-          lineHeight: '1',
-          justifyContent: 'space-around',
-          alignItems: 'left',
-          flexDirection: 'column',
+          display: "flex",
+          justifyContent: "space-around",
+          alignItems: "left",
+          height: "450px",
         }}
       >
+        <GoogleMaps style={{
+                    display: "flex",
+                    justifyContent: "center",
 
-      {/* <GoogleMaps /> */}
-
-
-
+                    alignItems: "left",
+                    width: "1500px",
+}} />
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              color: "white",
+              width: "70%",
+              alignItems: "center"
+            }}
+          >
+            {mainpitch.description}
+          </div>
+        </div>
       </div>
     </div>
-    
+
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
-                <div className="content">
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
-                  </div>
-                  <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
-                </div>
-                <div className="columns">
-                  <div className="column is-12">
-                    <p>{description}</p>
-                  </div>
-                </div>
+                <div className="columns"></div>
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/products">
-                      Voir tous les produits
+                      LA BOUTIQUE
                     </Link>
                   </div>
                 </div>
@@ -140,16 +123,17 @@ export const IndexPageTemplate = ({
                       Lire
                     </Link>
                   </div>
-                  <Features gridItems={intro.blurbs} />
+                  {/* <Features gridItems={intro.blurbs} /> */}
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <InstagramFeed token="EAACyVITcVpgBAOmbcT5WPuc4br8BWhvywNtPyjPhzYIeUwcdbPN8s0dleQQCdyQElt0dcRkgqm5hZCRNZCtf5OZATaj3FVFDPdjJAatNmOXVXsZBEJnk6PX5Nb8jRIQuoyEi37hczQ1hUZBbcZBYnnd6Ti30hNZBAWiHqVDWW80HbnG5J0yHnCQZCb4TbEKt7yDzCQdlp6mvbAZDZD"  counter="6"/>
     </section>
   </div>
-)
+);
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -161,10 +145,10 @@ IndexPageTemplate.propTypes = {
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
-}
+};
 
 const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark
+  const { frontmatter } = data.markdownRemark;
 
   return (
     <Layout>
@@ -176,8 +160,8 @@ const IndexPage = ({ data }) => {
         intro={frontmatter.intro}
       />
     </Layout>
-  )
-}
+  );
+};
 
 IndexPage.propTypes = {
   data: PropTypes.shape({
@@ -185,11 +169,9 @@ IndexPage.propTypes = {
       frontmatter: PropTypes.object,
     }),
   }),
-}
+};
 
-export default IndexPage
-
-
+export default IndexPage;
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
@@ -204,7 +186,6 @@ export const pageQuery = graphql`
           }
         }
 
-        
         mainpitch {
           title
           description
@@ -224,8 +205,7 @@ export const pageQuery = graphql`
           heading
           description
         }
-        
       }
     }
   }
-`
+`;

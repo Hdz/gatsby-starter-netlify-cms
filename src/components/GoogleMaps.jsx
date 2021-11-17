@@ -3,27 +3,30 @@ import GoogleMapReact from 'google-map-react'
 
 const defaultProps = {
   center: {
-    lat: 59.95,
-    lng: 30.33,
+    lat: 47.3371233,
+    lng: -1.5245373,
   },
-  zoom: 11,
+  zoom: 10,
 }
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>
 
-const GoogleMap = () => (
+const GoogleMaps = () => (
+  <div style={{ height: '100%', width: '200%' }}>
     <GoogleMapReact
-      // bootstrapURLKeys={{ key: 'AlzaSyBRKoTpCZsUXfcXyxHxoK-PpXMHYwfqs8o' }}
-      bootstrapURLKeys={{ key: 'GOOGLE_API_KEY' }}
+      bootstrapURLKeys={{ key: process.env.$GOOGLE_API_KEY}}
       defaultCenter={defaultProps.center}
       defaultZoom={defaultProps.zoom}
+        yesIWantToUseGoogleMapApiInternals
     >
       <AnyReactComponent
-        lat={59.955413}
-        lng={30.337844}
-        text={'Test'}
+        lat={47.3305129}
+        lng={-1.5218838}
+        text={'FCS'}
       />
+          
     </GoogleMapReact>
+  </div>
 )
 
-export default GoogleMap
+export default GoogleMaps

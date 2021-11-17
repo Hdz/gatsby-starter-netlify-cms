@@ -1,6 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
+import StyledTreeExample from '../../components/Tree'
 
 function encode(data) {
   return Object.keys(data)
@@ -36,10 +37,12 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <section className="section">
+        
+                  <StyledTreeExample />
+                  <section className="section">
           <div className="container">
             <div className="content">
-              <h1>Contact</h1>
+              <h1>Si vous souhaitez nous contacter, c'est par ici !</h1>
               <form
                 name="contact"
                 method="post"
@@ -58,7 +61,7 @@ export default class Index extends React.Component {
                 </div>
                 <div className="field">
                   <label className="label" htmlFor={'name'}>
-                    Your name
+                    Votre nom
                   </label>
                   <div className="control">
                     <input
@@ -74,7 +77,7 @@ export default class Index extends React.Component {
                 </div>
                 <div className="field">
                   <label className="label" htmlFor={'email'}>
-                    Email
+                    Votre mail
                   </label>
                   <div className="control">
                     <input
@@ -105,7 +108,7 @@ export default class Index extends React.Component {
                 </div>
                 <div className="field">
                   <button className="button is-link" type="submit">
-                    Send
+                    Envoyer
                   </button>
                 </div>
               </form>

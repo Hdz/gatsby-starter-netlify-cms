@@ -26,6 +26,8 @@ export const PresentationPageTemplate = ({
                 {title}
               </h2>
               <PageContent className="content" content={content} />
+              <PageContent className="content" content={mainpitch} />
+
               
             </div>
           </div>
@@ -39,7 +41,11 @@ PresentationPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
-}
+  subheading: PropTypes.string,
+  mainpitch: PropTypes.object,
+  description: PropTypes.string,
+  intro: PropTypes.shape({
+})}
 
 const PresentationPage = ({ data }) => {
   const { markdownRemark: post } = data
@@ -51,7 +57,7 @@ const PresentationPage = ({ data }) => {
         title={post.frontmatter.title}
         content={post.html}
         description={post.frontmatter.description}
-
+        mainpitch={post.frontmatter.description}
       />
     </Layout>
   )
